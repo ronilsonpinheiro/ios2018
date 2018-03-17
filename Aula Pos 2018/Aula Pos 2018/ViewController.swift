@@ -49,7 +49,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     @IBAction func compartilhar(){
         let alerta = UIAlertController(title: "Compartilhar", message: "Escolha onde compartilhar", preferredStyle: .actionSheet)
         
-        let emailAction = UIAlertAction(title: "E-mail", style: .default, handler: { action -> Void in self.compartilharEmail(); })
+        let emailAction = UIAlertAction(title: "E-mail", style: .default, handler: { action -> Void in self.compartilharEmail()})
         alerta.addAction(emailAction)
         
         let whatsappAction = UIAlertAction(title: "Whatsapp", style: .default, handler: {action -> Void in self.compartilharWhatsapp()})
@@ -58,14 +58,14 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
         let voltarAction = UIAlertAction(title: "Voltar", style: .cancel, handler: nil)
         alerta.addAction(voltarAction)
         
-        let exibirAction = UIAlertAction(title: "Voltar", style: .default, handler: { action -> Void in self.mostrarMensagem(titulo: "Pos Alfa", mensagem: self.mensagemCompartilhar())})
+        let exibirAction = UIAlertAction(title: "Exibir", style: .default, handler: { action -> Void in self.mostrarMensagem(titulo: "Pos Alfa", mensagem: self.mensagemCompartilhar())})
         alerta.addAction(exibirAction)
         
         self.present(alerta, animated: true, completion: nil)
     }
     
     func mensagemCompartilhar() -> String {
-        return "Valor da gasolina: \(campoGasolina.text). Valor etanol \(campoEtanol.text)."
+        return "Valor da gasolina: \(campoGasolina.text!). Valor etanol: \(campoEtanol.text!)."
     }
     
     func compartilharEmail() {
