@@ -79,6 +79,13 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
         }
     }
     
+    //fechar tela de email
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+       controller.dismiss(animated: true, completion: nil)
+    }
+    
+    }
+    
     func compartilharWhatsapp() {
         let link = "whatsapp://send?text="
         
