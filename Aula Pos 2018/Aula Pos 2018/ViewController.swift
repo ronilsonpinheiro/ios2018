@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
     @IBOutlet var campoGasolina:UITextField! //! quando não for inicializado, esta avisando que tera valor
     @IBOutlet var campoEtanol:UITextField!
@@ -67,7 +67,14 @@ class ViewController: UIViewController {
     
     func compartilharEmail() {
         if (MFMailComposeViewController.canSendMail()){
+            let compose = MFMailComposeViewController()
+            compose.mailComposeDelegate = self
             
+            compose.setToRecipients(["ronilsonpinheiro@gmail.com"])
+            compose.setSubject("Assunto do E-mail")
+            compose.setMessageBody("Mensagem: \(mensagemCompartilhar())", isHTML: false)
+            
+            self.present(compose, animated: true, completion: nil)
         }
     }
     
