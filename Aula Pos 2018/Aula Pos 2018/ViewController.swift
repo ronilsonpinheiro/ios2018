@@ -58,6 +58,9 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
         let voltarAction = UIAlertAction(title: "Voltar", style: .cancel, handler: nil)
         alerta.addAction(voltarAction)
         
+        let exibirAction = UIAlertAction(title: "Voltar", style: .default, handler: { action -> Void in self.mostrarMensagem(titulo: "Pos Alfa", mensagem: self.mensagemCompartilhar())})
+        alerta.addAction(exibirAction)
+        
         self.present(alerta, animated: true, completion: nil)
     }
     
@@ -82,8 +85,6 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
     //fechar tela de email
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
        controller.dismiss(animated: true, completion: nil)
-    }
-    
     }
     
     func compartilharWhatsapp() {
