@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class ViewController: UIViewController {
 
@@ -65,10 +66,16 @@ class ViewController: UIViewController {
     }
     
     func compartilharEmail() {
-        
+        if (MFMailComposeViewController.canSendMail()){
+            
+        }
     }
     
     func compartilharWhatsapp() {
+        let link = "whatsapp://send?text="
         
+        if let chamarLink = URL(string:link) {
+            UIApplication.shared.open(chamarLink, options: [:], completionHandler: nil)
+        }
     }
 }
