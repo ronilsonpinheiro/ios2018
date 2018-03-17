@@ -73,6 +73,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             compose.setToRecipients(["ronilsonpinheiro@gmail.com"])
             compose.setSubject("Assunto do E-mail")
             compose.setMessageBody("Mensagem: \(mensagemCompartilhar())", isHTML: false)
+            compose.addAttachmentData(UIImageJPEGRepresentation(UIImage(named: "image.jpg")!, CGFloat(1.0))!, mimeType: "image.jpeg", fileName: "imagem.jpg")
             
             self.present(compose, animated: true, completion: nil)
         }
