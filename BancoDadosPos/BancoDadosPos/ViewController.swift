@@ -8,15 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var campoNome: UITextField!
     @IBOutlet weak var campoCidade: UITextField!
     @IBOutlet weak var tabela: UITableView!
     @IBAction func salvar(_ sender: Any) {
         tbPessoa.salvar(i: -1, nome: campoNome.text!, cidade: campoCidade.text!)
-        campoNome.text = ""
+        
+        //limpar campos apos salvar
         campoCidade.text = ""
+        campoNome.text = ""
     }
     
     var tbPessoa = TbPessoa()
@@ -39,5 +41,21 @@ class ViewController: UIViewController {
         //recarregar dados na tela
         tabela.reloadData()
     }
+    
+    //número de sessões na tabela
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    //número de linhas dentro da sessão
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listaPessoa.count
+    }
+    
+    //retornar a célula com o valor do array de pessoa
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+    }
+    
 }
 
