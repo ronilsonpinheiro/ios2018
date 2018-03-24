@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var campoCidade: UITextField!
     @IBOutlet weak var tabela: UITableView!
     @IBAction func salvar(_ sender: Any) {
-        
+        tbPessoa.salvar(i: -1, nome: campoNome.text!, cidade: campoCidade.text!)
     }
     
     var tbPessoa = TbPessoa()
