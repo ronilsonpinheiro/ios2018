@@ -29,6 +29,16 @@ class TbPessoa{
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: nomeTabela)
         
         do {
+            //criando uma ordem por nome ASC
+            let nomeOrdem = NSSortDescriptor(key: "nome", ascending: true)
+            
+            //criando uma ordem por nome ASC
+            let cidadeOrdem = NSSortDescriptor(key: "cidade", ascending: true)
+            
+            //adicionando a ordem por nome  e cidade na requisição de busca
+            fetchRequest.sortDescriptors = [nomeOrdem, cidadeOrdem]
+            
+            
             //verifica se existe filtro, se sim, adiciona o filtro na tabela
             if let condicao = filtro {
                 fetchRequest.predicate = condicao
