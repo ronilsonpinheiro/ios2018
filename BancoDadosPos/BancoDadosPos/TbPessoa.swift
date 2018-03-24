@@ -58,8 +58,15 @@ class TbPessoa{
         
     }
     
-    func deletar() {
+    func deletar(i: Int) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
         
+        let managedContext = appDelegate.managedObjectContext
+        
+        //deletando o objeto na tabela
+        managedContext.delete(self.pessoas[1])
     }
 }
 
