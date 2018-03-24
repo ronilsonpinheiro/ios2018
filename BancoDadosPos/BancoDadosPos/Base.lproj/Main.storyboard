@@ -96,6 +96,7 @@
                                     <color key="titleColor" red="0.69751862046632129" green="0.17892228841215593" blue="0.10561043494393382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="deletar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ciB-Kr-kMD"/>
                                     <action selector="excluir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ORG-cc-Z9K"/>
                                 </connections>
                             </button>

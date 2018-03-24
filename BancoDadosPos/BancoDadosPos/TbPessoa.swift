@@ -120,6 +120,13 @@ class TbPessoa{
         
         //deletando o objeto na tabela
         managedContext.delete(self.pessoas[1])
+        do {
+            managedContext = appDelegate.delete(self.pessoas[i])
+            try managedContext.save()
+        } catch let error as NSError {
+            //caso de erro avisa mostrando o erro
+            print("Erro ao inseri \(error)")
+        }
     }
 }
 

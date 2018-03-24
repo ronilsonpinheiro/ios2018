@@ -20,8 +20,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //recarregar os dados após salvar
         tabela.reloadData()
     }
-    @IBAction func excluir(_ sender: Any) {
-        
+    
+    @IBAction func deletar(_ sender: Any) {
+        if (indice >= 0){
+            tbPessoa.deletar(i: indice)
+            carregarDados()
+        }
     }
     
     //retorna qual célula selecionada
