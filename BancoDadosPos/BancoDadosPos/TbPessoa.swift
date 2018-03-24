@@ -57,11 +57,19 @@ class TbPessoa{
     func salvar(i: Int, nome: String, cidade: String) {
         if (i >= 0){
             //alterar
-            alterar(i: Int, nome: String, cidade: String)
+            alterar(i: i, nome: nome, cidade: cidade)
         } else {
             // inserir
-            inserir(nome: String, cidade: String)
+            inserir(nome: nome, cidade: cidade)
         }
+    }
+    
+     private func inserir(nome: String, cidade: String) {
+        
+    }
+    
+    private func alterar(i: Int, nome: String, cidade: String) {
+        
     }
     
     func deletar(i: Int) {
