@@ -13,6 +13,8 @@
 		03FF278320666C1D00D934A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FF278220666C1D00D934A0 /* Assets.xcassets */; };
 		03FF278620666C1D00D934A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FF278420666C1D00D934A0 /* LaunchScreen.storyboard */; };
 		03FF278E20666E7400D934A0 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF278D20666E7400D934A0 /* Pessoa.swift */; };
+		03FF279020666FF300D934A0 /* TbPessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF278F20666FF300D934A0 /* TbPessoa.swift */; };
+		03FF27932066706B00D934A0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FF27922066706B00D934A0 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		03FF278520666C1D00D934A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03FF278720666C1D00D934A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03FF278D20666E7400D934A0 /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
+		03FF278F20666FF300D934A0 /* TbPessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TbPessoa.swift; sourceTree = "<group>"; };
+		03FF27922066706B00D934A0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FF27932066706B00D934A0 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				03FF277A20666C1D00D934A0 /* BancoDadosPos */,
 				03FF277920666C1D00D934A0 /* Products */,
+				03FF27912066706A00D934A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +69,17 @@
 				03FF278420666C1D00D934A0 /* LaunchScreen.storyboard */,
 				03FF278720666C1D00D934A0 /* Info.plist */,
 				03FF278D20666E7400D934A0 /* Pessoa.swift */,
+				03FF278F20666FF300D934A0 /* TbPessoa.swift */,
 			);
 			path = BancoDadosPos;
+			sourceTree = "<group>";
+		};
+		03FF27912066706A00D934A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03FF27922066706B00D934A0 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +156,7 @@
 			files = (
 				03FF277E20666C1D00D934A0 /* ViewController.swift in Sources */,
 				03FF278E20666E7400D934A0 /* Pessoa.swift in Sources */,
+				03FF279020666FF300D934A0 /* TbPessoa.swift in Sources */,
 				03FF277C20666C1D00D934A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
