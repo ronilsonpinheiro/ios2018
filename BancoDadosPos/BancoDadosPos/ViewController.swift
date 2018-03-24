@@ -24,8 +24,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //ao carragar a tela , carrega os dados da tabela pessoa
+        carregarDados()
     }
-
+    
+    //carregar dados na tela
+    func carregarDados() {
+        //criando where da busca
+        //var filtro = NSPredicate(format: "cidade = %@", "Umuarama")
+        
+        //carregando na lista  de os dados da tblPessoa
+        listaPessoa = tbPessoa.buscar(filtro: nil)
+        
+        //recarregar dados na tela
+        tabela.reloadData()
+    }
 }
 
