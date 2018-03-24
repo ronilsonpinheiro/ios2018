@@ -20,6 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //recarregar os dados após salvar
         tabela.reloadData()
     }
+    @IBAction func excluir(_ sender: Any) {
+        
+    }
     
     //retorna qual célula selecionada
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

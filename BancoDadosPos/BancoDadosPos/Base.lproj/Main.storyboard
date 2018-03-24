@@ -89,6 +89,16 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="tyd-pC-Ywr"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-by-MIL">
+                                <rect key="frame" x="313" y="154" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Excluir">
+                                    <color key="titleColor" red="0.69751862046632129" green="0.17892228841215593" blue="0.10561043494393382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="excluir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ORG-cc-Z9K"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
