@@ -19,8 +19,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //recarregar os dados após salvar
         tabela.reloadData()
+    }
+    
+    //retorna qual célula selecionada
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //carregando os dados da pessoa de acordo com o índice da tabela
+        let pes = listaPessoa[indexPath.row]
         
-        
+        campoNome.text = pes.nome
+        campoCidade.text = pes.cidade
+        indice = indexPath.row
     }
     private var indice = -1
     var tbPessoa = TbPessoa()
