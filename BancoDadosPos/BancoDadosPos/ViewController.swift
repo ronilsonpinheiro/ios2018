@@ -20,11 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //recarregar os dados após salvar
         tabela.reloadData()
         
-        //limpar campos apos salvar
-        campoCidade.text = ""
-        campoNome.text = ""
+        
     }
-    
+    private var indice = -1
     var tbPessoa = TbPessoa()
     var listaPessoa = [Pessoa]()
     
@@ -44,6 +42,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //recarregar dados na tela
         tabela.reloadData()
+        
+        //limpar campos apos salvar
+        campoNome.text = ""
+        campoCidade.text = ""
+        indice = -1
     }
     
     //número de sessões na tabela
