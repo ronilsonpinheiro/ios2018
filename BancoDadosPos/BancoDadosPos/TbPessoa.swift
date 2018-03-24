@@ -65,6 +65,16 @@ class TbPessoa{
     }
     
      private func inserir(nome: String, cidade: String) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.managedObjectContext
+        
+        //carrega do banco a entidade (tabela)
+        var tabela = NSEntityDescription.entity(forEntityName: nomeTabela, in: managedContext)!
+        
+        //pega a estrutura da tabela e cria um objeto manipulável para inserir dados
+        var pes = NSManagedObject(entity: tabela, insertInto: managedContext)
         
     }
     
