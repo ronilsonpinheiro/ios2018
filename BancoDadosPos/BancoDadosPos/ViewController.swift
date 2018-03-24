@@ -14,7 +14,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var campoCidade: UITextField!
     @IBOutlet weak var tabela: UITableView!
     @IBAction func salvar(_ sender: Any) {
+        //salvando os dados da tela no banco de dados
         tbPessoa.salvar(i: -1, nome: campoNome.text!, cidade: campoCidade.text!)
+        
+        //recarregar os dados após salvar
+        tabela.reloadData()
         
         //limpar campos apos salvar
         campoCidade.text = ""
