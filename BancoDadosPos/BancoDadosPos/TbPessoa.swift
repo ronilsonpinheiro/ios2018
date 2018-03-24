@@ -7,7 +7,22 @@
 //
 
 import UIKit
+import CoreData
 
 class TbPessoa{
+    //nome da tabela no Model.xcdatamodeld
+    private let nomeTabela = "TblPessoa"
+    private var pessoas:[NSManagedObject] = []
     
+    func buscar(){
+        
+    }
+    
+    func salvar() {
+        
+    }
+    
+    func deletar() {
+        
+    }
 }

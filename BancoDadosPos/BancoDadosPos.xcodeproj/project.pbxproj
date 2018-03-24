@@ -15,6 +15,7 @@
 		03FF278E20666E7400D934A0 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF278D20666E7400D934A0 /* Pessoa.swift */; };
 		03FF279020666FF300D934A0 /* TbPessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF278F20666FF300D934A0 /* TbPessoa.swift */; };
 		03FF27932066706B00D934A0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FF27922066706B00D934A0 /* CoreData.framework */; };
+		03FF27962066750700D934A0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03FF27942066750700D934A0 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		03FF278D20666E7400D934A0 /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
 		03FF278F20666FF300D934A0 /* TbPessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TbPessoa.swift; sourceTree = "<group>"; };
 		03FF27922066706B00D934A0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		03FF27952066750700D934A0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				03FF278720666C1D00D934A0 /* Info.plist */,
 				03FF278D20666E7400D934A0 /* Pessoa.swift */,
 				03FF278F20666FF300D934A0 /* TbPessoa.swift */,
+				03FF27942066750700D934A0 /* Model.xcdatamodeld */,
 			);
 			path = BancoDadosPos;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				03FF277E20666C1D00D934A0 /* ViewController.swift in Sources */,
 				03FF278E20666E7400D934A0 /* Pessoa.swift in Sources */,
+				03FF27962066750700D934A0 /* Model.xcdatamodeld in Sources */,
 				03FF279020666FF300D934A0 /* TbPessoa.swift in Sources */,
 				03FF277C20666C1D00D934A0 /* AppDelegate.swift in Sources */,
 			);
@@ -340,6 +344,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03FF27942066750700D934A0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03FF27952066750700D934A0 /* Model.xcdatamodel */,
+			);
+			currentVersion = 03FF27952066750700D934A0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 03FF277020666C1D00D934A0 /* Project object */;
 }
