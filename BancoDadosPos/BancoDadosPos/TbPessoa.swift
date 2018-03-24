@@ -54,8 +54,14 @@ class TbPessoa{
         return listaPessoa
     }
     
-    func salvar() {
-        
+    func salvar(i: Int, nome: String, cidade: String) {
+        if (i >= 0){
+            //alterar
+            alterar(i: Int, nome: String, cidade: String)
+        } else {
+            // inserir
+            inserir(nome: String, cidade: String)
+        }
     }
     
     func deletar(i: Int) {
