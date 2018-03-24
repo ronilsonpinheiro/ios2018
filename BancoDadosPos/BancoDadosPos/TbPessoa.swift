@@ -76,6 +76,9 @@ class TbPessoa{
         //pega a estrutura da tabela e cria um objeto manipulável para inserir dados
         var pes = NSManagedObject(entity: tabela, insertInto: managedContext)
         
+        //adicionando os valores passados por parametros
+        pes.setValue(nome, forKey: "nome")
+        pes.setValue(cidade, forKey: "cidade")
     }
     
     private func alterar(i: Int, nome: String, cidade: String) {
