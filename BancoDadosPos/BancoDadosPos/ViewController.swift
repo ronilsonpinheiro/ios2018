@@ -62,6 +62,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         celula.textLabel?.text = pes.nome
         celula.detailTextLabel?.text = pes.cidade
+        
+        return celula
     }
     
 }
