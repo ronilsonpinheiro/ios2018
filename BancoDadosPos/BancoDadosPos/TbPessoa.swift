@@ -79,6 +79,12 @@ class TbPessoa{
         //adicionando os valores passados por parametros
         pes.setValue(nome, forKey: "nome")
         pes.setValue(cidade, forKey: "cidade")
+        
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Erro ao inserir \(nome), \(error)")
+        }
     }
     
     private func alterar(i: Int, nome: String, cidade: String) {
