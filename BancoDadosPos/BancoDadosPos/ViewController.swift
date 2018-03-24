@@ -54,7 +54,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //retornar a célula com o valor do array de pessoa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //carregando os dados da pessoa de acordo com o índice da tabela
+        let pes = listaPessoa[indexPath.row]
         
+        //busca na tabela se existe um modelo de celula e retorma
+        let celula = tableView.dequeueReusableCell(withIdentifier: "celula")!
+        
+        celula.textLabel?.text = pes.nome
+        celula.detailTextLabel?.text = pes.cidade
     }
     
 }
