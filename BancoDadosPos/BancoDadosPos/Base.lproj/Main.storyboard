@@ -64,7 +64,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="btnSalvar" destination="YkV-pc-ZUv" id="EzP-TE-Wb7"/>
                         <outlet property="campoCidade" destination="ZjS-ei-Qiz" id="ZSV-WH-uOX"/>
                         <outlet property="campoNome" destination="E0M-dP-GOk" id="mfW-dD-jnM"/>
                         <outlet property="tabela" destination="tVJ-tF-zVu" id="OlR-L2-104"/>
