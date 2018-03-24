@@ -9,7 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var campoNome: UITextField!
+    @IBOutlet weak var campoCidade: UITextField!
+    @IBOutlet weak var tabela: UITableView!
+    @IBAction func salvar(_ sender: Any) {
+        
+    }
+    
+    var tbPessoa = TbPessoa()
+    var listaPessoa = [Pessoa]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
