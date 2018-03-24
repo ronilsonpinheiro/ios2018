@@ -69,7 +69,17 @@ class TbPessoa{
     }
     
     private func alterar(i: Int, nome: String, cidade: String) {
+        //alterando os dados do array com os novos dados da pessoa
+        self.pessoas[i].setValue(nome, forKey: nome)
+        self.pessoas[i].setValue(cidade, forKey: cidade)
         
+        do {
+            try self.pessoas[i].managedObjectContext?.save()
+        } catch let error as NSError{
+            
+            //caso de erro avisa mostrando o indice, nome e mensagem de erro
+            print("Erro ao alterar: \(i) - \(nome). \(error)")
+        }
     }
     
     func deletar(i: Int) {
